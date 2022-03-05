@@ -4,7 +4,7 @@ const routing = require("./routes/routes1")(app);
 
 const app = express();
 
-app.get("/routes/api", (req, res) => res.send("yo"));
+app.get("/api", (req, res) => res.send("yo"));
 
 const port = process.env.PORT || 9000;
 
