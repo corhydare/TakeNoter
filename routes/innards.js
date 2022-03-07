@@ -11,4 +11,15 @@ const addNewNote = (body, notesArray) => {
   return newNote;
 };
 
-module.exports = { addNewNote };
+const removeNote = (id, notesArray) => {
+  notesArray.splice(id, 1);
+  for (let i = 0; i < notesArray.length; i++) {
+    notesArray[i].id = i;
+  }
+  return notesArray;
+};
+
+module.exports = {
+  addNewNote,
+  removeNote,
+};
