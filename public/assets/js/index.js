@@ -9,8 +9,8 @@ if (window.location.pathname === "/notes.html") {
   noteText = document.querySelector(".note-textarea");
   saveNoteBtn = document.querySelector(".save-note");
   newNoteBtn = document.querySelector(".new-note");
-  noteList = document.querySelectorAll(".list-container");
-  noteGroup = documen.querySelectorALL(".list-group");
+  noteList = document.querySelector(".list-container");
+  noteGroup = document.querySelector(".list-group");
 }
 
 // Show an element
