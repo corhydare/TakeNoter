@@ -10,4 +10,4 @@ app.use(express.static("public"));
 app.use("/api", api);
 app.use("/", html);
 
-app.listen(port, () => console.log(`app listening on port ${port}!`));
+app.listen(port, () => console.log(`What's wrong with ${port}?`));
