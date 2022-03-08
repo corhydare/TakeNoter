@@ -1,5 +1,5 @@
 const express = require("express");
-const port = process.env.port || 9000;
+const port = process.env.port || 3001;
 const app = express();
 const html = require("./routes/htmlRoutes");
 const api = require("./routes/apiRoutes");
