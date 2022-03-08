@@ -3,7 +3,9 @@ const port = process.env.port || 3001;
 const app = express();
 const html = require("./routes/htmlRoutes");
 const api = require("./routes/apiRoutes");
+const { clog } = require("./middleware/clog");
 
+app.use(clog);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
