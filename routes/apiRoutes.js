@@ -4,8 +4,8 @@ const database = require("../db/db.json");
 const { addNewNote, removeNote } = require("../routes/innards");
 
 router.get("/notes", (req, res) => {
-  let output = database;
-  res.json(output);
+  let results = database;
+  res.json(results);
 });
 
 router.post("/notes", (req, res) => {
@@ -16,8 +16,8 @@ router.post("/notes", (req, res) => {
 });
 
 router.delete("/notes/:id", (req, res) => {
-  const noteDel = removeNote(req.params.id, database);
-  res.json(noteDel);
+  const newNotes = removeNote(req.params.id, database);
+  res.json(newNotes);
 });
 
 module.exports = router;
